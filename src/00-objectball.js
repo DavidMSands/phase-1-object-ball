@@ -53,7 +53,8 @@ function gameObject() {
                     steals: 3,
                     blocks: 1,
                     slamDunks: 1
-                  },}
+                  }
+            }
         }, 
         away: {
             teamName: "Charlotte Hornets",
@@ -108,6 +109,21 @@ function gameObject() {
                     steals: 22,
                     blocks: 5,
                     slamDunks: 12
-                  },}
+                  }
+                } 
+            }
         }
 }
+
+function homeTeamName() {
+    let object = gameObject()
+    return object['home']['teamName']
+  }
+  
+  function awayTeamName() {
+    let object = gameObject()
+    return object['away']['teamName']
+  }
+  
+  console.log(awayTeamName())
+  console.log(homeTeamName())
